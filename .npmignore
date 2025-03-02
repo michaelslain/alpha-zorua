@@ -2,4 +2,7 @@ tests/
 src/
 tsconfig.json
 jest.config.js
-.gitignore 
+.gitignore
+bun.lock
+*.test.ts
+*.spec.ts 

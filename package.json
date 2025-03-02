@@ -1,6 +1,6 @@
 {
     "name": "alphazorua",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Pokemon battle engine powered by minimax search",
     "author": "Michael Slain",
     "license": "MIT",
@@ -15,12 +15,15 @@
     "types": "dist/index.d.ts",
     "type": "module",
     "files": [
-        "dist"
+        "dist",
+        "src"
     ],
     "scripts": {
-        "build": "tsc",
+        "clean": "rm -rf dist",
+        "build": "npm run clean && tsc",
         "test": "jest",
-        "prepublish": "npm run build"
+        "prepare": "npm run build",
+        "prepublishOnly": "npm test && npm run build"
     },
     "dependencies": {
         "@pkmn/data": "^0.9.30",
