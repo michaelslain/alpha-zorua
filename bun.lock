@@ -1,0 +1,51 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "pokemon-showdown-bot",
+      "dependencies": {
+        "@pkmn/data": "^0.9.30",
+        "@pkmn/dex": "^0.9.30",
+        "@pkmn/randoms": "^0.9.30",
+        "@pkmn/sim": "^0.9.30",
+      },
+      "devDependencies": {
+        "@types/bun": "latest",
+      },
+      "peerDependencies": {
+        "typescript": "^5",
+      },
+    },
+  },
+  "packages": {
+    "@pkmn/data": ["@pkmn/data@0.9.30", "", { "dependencies": { "@pkmn/dex-types": "^0.9.30" } }, "sha512-weF+7FTiLcmLYVLX4EgCPjSOA1zEUwbwf85I8weVNh3J/trXz5/5xFgJ5QH67atMo05WiyM8S2DOPl2AP1M3PQ=="],
+
+    "@pkmn/dex": ["@pkmn/dex@0.9.30", "", { "dependencies": { "@pkmn/dex-types": "^0.9.30" } }, "sha512-vPTnz0mml66i83ar7dJqJF9MsYgdNVbfbHPwLwX5YdX96z2aSd5m23jIQRRlb+reh+gIJGDb+TsMpVvFzGYXPA=="],
+
+    "@pkmn/dex-types": ["@pkmn/dex-types@0.9.30", "", { "dependencies": { "@pkmn/types": "^4.0.0" } }, "sha512-Zz6MvFzpIpZTSj5SH97Pb1iRbpOHhAnk1EBE2LCEkL50+sGWgKlEub0aSbAhxJ13aM64Hl7cHWaHYxPi4oLsBw=="],
+
+    "@pkmn/randoms": ["@pkmn/randoms@0.9.30", "", { "dependencies": { "@pkmn/sim": "^0.9.30" } }, "sha512-2sdYPZq9PLE5Sqj/wPFAEgH4WFt4iFYm3mGb6PS1oiFmxjRiJjovh9QRoDi3Qufs8nPSOtARMdFLyfQR0Gfrvg=="],
+
+    "@pkmn/sets": ["@pkmn/sets@5.1.2", "", { "dependencies": { "@pkmn/types": "^4.0.0" } }, "sha512-eMChlYko92ZdvNKqjcJ2PkzDmSc5kIbaKSrPU/bOnjcrOq8ZGjod3b7KcDxeXrZXQAS027O0uVhwIJbdMDe/Yw=="],
+
+    "@pkmn/sim": ["@pkmn/sim@0.9.30", "", { "dependencies": { "@pkmn/sets": "^5.1.2", "@pkmn/streams": "^1.1.0", "ts-chacha20": "^1.2.0" } }, "sha512-I6ut8v7t3AJaHDLLEAYE9lehXrzHdPyiImOAJIxZqTrG7qw37PNf7QWhNrhIhr5iDCFQhyCqAwqZ7rw5rUCpvA=="],
+
+    "@pkmn/streams": ["@pkmn/streams@1.1.0", "", {}, "sha512-Pp9k7gt4xd76DqTU+LQEUyzuaauM4bV1MlehVtX1NS7o9zMFtjw50MfaEQ62dIMZyzxNjsJGoLGBeY1iSYLsRA=="],
+
+    "@pkmn/types": ["@pkmn/types@4.0.0", "", {}, "sha512-gR2s/pxJYEegek1TtsYCQupNR3d5hMlcJFsiD+2LyfKr4tc+gETTql47tWLX5mFSbPcbXh7f4+7txlMIDoZx/g=="],
+
+    "@types/bun": ["@types/bun@1.2.4", "", { "dependencies": { "bun-types": "1.2.4" } }, "sha512-QtuV5OMR8/rdKJs213iwXDpfVvnskPXY/S0ZiFbsTjQZycuqPbMW8Gf/XhLfwE5njW8sxI2WjISURXPlHypMFA=="],
+
+    "@types/node": ["@types/node@22.13.8", "", { "dependencies": { "undici-types": "~6.20.0" } }, "sha512-G3EfaZS+iOGYWLLRCEAXdWK9my08oHNZ+FHluRiggIYJPOXzhOiDgpVCUHaUvyIC5/fj7C/p637jdzC666AOKQ=="],
+
+    "@types/ws": ["@types/ws@8.5.14", "", { "dependencies": { "@types/node": "*" } }, "sha512-bd/YFLW+URhBzMXurx7lWByOu+xzU9+kb3RboOteXYDfW+tr+JZa99OyNmPINEGB/ahzKrEuc8rcv4gnpJmxTw=="],
+
+    "bun-types": ["bun-types@1.2.4", "", { "dependencies": { "@types/node": "*", "@types/ws": "~8.5.10" } }, "sha512-nDPymR207ZZEoWD4AavvEaa/KZe/qlrbMSchqpQwovPZCKc7pwMoENjEtHgMKaAjJhy+x6vfqSBA1QU3bJgs0Q=="],
+
+    "ts-chacha20": ["ts-chacha20@1.2.0", "", {}, "sha512-PTyPoWYHc2we8P2NTn5hpYG211popWbkjiw+k63xqjeMrx9pPtXSclz9F3fu0Tpr+vfR1xxcQFwsEkh1cXMLqw=="],
+
+    "typescript": ["typescript@5.8.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ=="],
+
+    "undici-types": ["undici-types@6.20.0", "", {}, "sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg=="],
+  }
+}

@@ -1,0 +1,51 @@
+{
+    "name": "alphazorua",
+    "version": "0.1.0",
+    "description": "Pokemon battle engine powered by minimax search",
+    "author": "Michael Slain",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/michaelslain/alphazorua"
+    },
+    "bugs": {
+        "url": "https://github.com/michaelslain/alphazorua/issues"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "prepublish": "npm run build"
+    },
+    "dependencies": {
+        "@pkmn/data": "^0.9.30",
+        "@pkmn/dex": "^0.9.30",
+        "@pkmn/randoms": "^0.9.30",
+        "@pkmn/sim": "^0.9.30"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/jest": "^29.0.0",
+        "jest": "^29.0.0",
+        "ts-jest": "^29.0.0",
+        "typescript": "^5"
+    },
+    "keywords": [
+        "pokemon",
+        "showdown",
+        "ai",
+        "battle",
+        "engine"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    }
+}
